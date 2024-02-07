@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Assignment</title>
+    <style>
+      body {
+        display: flex;
+        height: 50%;
+        justify-content: center;
+      }
+
+      .container {
+        display: flex;
+        border: 5px solid black;
+        background-color: aqua;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+      #lists {
+        display: flex;
+        gap: 1rem;
+      }
+      ul {
+        border: 2px solid black;
+        display: inline;
+        width: 200px;
+        height: 150px;
+      }
+      p {
+        display: inline;
+      }
+      .selected{
+        background-color: darkslateblue;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div id="lists">
+        <ul class="list1">
+          <li>HTML</li>
+          <li>JS</li>
+          <li>Flutter</li>
+        </ul>
+
+        <ul class="list2">
+          <li>C++</li>
+        </ul>
+      </div>
+        <div>
+          <button id="leftButton"><</button>
+
+          <button id="rightButton">></button>
+        </div>
+        <div>
+          <p>Add Course</p>
+          <input type="text" name="textCourse" value="" />
+          <button id="addButton">Add</button>
+        </div>
+    </div>
+    <script src="ass3.JS"></script>
+    <script src="consuming3.JS"></script>
+  </body>
+</html>
